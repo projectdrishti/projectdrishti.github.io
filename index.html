@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/6e02521c5e.js" crossorigin="anonymous"></script>
+  <title>Project Drishti</title>
+</head>
+
+<body>
+  <div class="circles">
+    <a href="#slide_1"><div class="circle active"></div></a>
+    <a href="#slide_2"><div class="circle"></div></a>
+    <a href="#slide_3"><div class="circle"></div></a>
+    <a href="#slide_4"><div class="circle"></div></a>
+    <a href="#slide_5"><div class="circle"></div></a>
+  </div>
+  <div class="header">
+    <div class="logo"><img src="images/logo.png" /><span>Drishti</span></div>
+    <div class="navigation">
+      <ul>
+        <a href="#slide_2">
+          <li>About</li>
+        </a>
+        <a href="#slide_3">
+          <li>Team</li>
+        </a>
+        <a href="#slide_4">
+          <li>Download</li>
+        </a>
+        <a href="#slide_5">
+          <li>Contact</li>
+        </a>
+      </ul>
+    </div>
+
+    <div class="navigation2">
+      <ul>
+        <a href="#slide_2">
+          <li>About</li>
+        </a>
+        <a href="#slide_3">
+          <li>Team</li>
+        </a>
+        <a href="#slide_4">
+          <li>Download</li>
+        </a>
+        <a href="#slide_5">
+          <li>Contact</li>
+        </a>
+      </ul>
+    </div>
+
+    <div class="drawer" onclick="drawerController()">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+  <div id="slide_1">
+    <img class="design" src="images/main.png" />
+  </div>
+
+  <div id="slide_2">
+
+    <div class="d_content">
+      <h1>About</h1>
+      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et
+        nisi vestibulum, tincidunt dui sit amet, elementum ligula. Phasellus
+        ac dictum ante. In ac nulla neque. Phasellus vel ligula nec risus
+      dictum pellentesque id in turpis.</span>
+    </div>
+    <img class="aboutbg" src="images/aboutimg.png">
+  </div>
+  
+  <div id="slide_3">
+    <div class="margined">
+      <h1>Our Team</h1>
+      Meet our designers and developers who made it happen.
+      <br><br><br>
+
+      <div class="card">
+        <div class="card_intro">
+          <img class="card_img" src="images/def.png">
+          <div>
+            <h3>Aashish Rijal</h3>
+            <font size="2">App Development</font>
+          </div>
+        </div>
+        <br>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et
+          nisi vestibulum, tincidunt dui sit amet, elementum ligula. Phasellus
+          ac dictum ante. In ac nulla neque. Phasellus vel ligula nec risus
+        dictum pellentesque id in turpis.</span>
+      </div>
+      <div class="card">
+        <div class="card_intro">
+          <img class="card_img" src="images/def.png">
+          <div>
+            <h3>Aayusha Budhathoki</h3>
+            <font size="2">UI & Web</font>
+          </div>
+        </div>
+        <br>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et
+          nisi vestibulum, tincidunt dui sit amet, elementum ligula. Phasellus
+          ac dictum ante. In ac nulla neque. Phasellus vel ligula nec risus
+        dictum pellentesque id in turpis.</span>
+      </div>
+
+      <div class="card">
+        <div class="card_intro">
+          <img class="card_img" src="images/def.png">
+          <div>
+            <h3>Abhishek Pandit</h3>
+            <font size="2">App Development</font>
+          </div>
+        </div>
+        <br>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et
+          nisi vestibulum, tincidunt dui sit amet, elementum ligula. Phasellus
+          ac dictum ante. In ac nulla neque. Phasellus vel ligula nec risus
+        dictum pellentesque id in turpis.</span>
+      </div>
+
+      <div class="card">
+        <div class="card_intro">
+          <img class="card_img" src="images/def.png">
+          <div>
+            <h3>Arbinda Pandey</h3>
+            <font size="2">UI & Web</font>
+          </div>
+        </div>
+        <br>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et
+          nisi vestibulum, tincidunt dui sit amet, elementum ligula. Phasellus
+          ac dictum ante. In ac nulla neque. Phasellus vel ligula nec risus
+        dictum pellentesque id in turpis.</span>
+      </div>
+
+      <div class="card">
+        <div class="card_intro">
+          <img class="card_img" src="images/def.png">
+          <div>
+            <h3>Oshin Panta</h3>
+            <font size="2">Project Management & UI</font>
+          </div>
+        </div>
+        <br>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et
+          nisi vestibulum, tincidunt dui sit amet, elementum ligula. Phasellus
+          ac dictum ante. In ac nulla neque. Phasellus vel ligula nec risus
+        dictum pellentesque id in turpis.</span>
+      </div>
+
+      <div class="card">
+        <div class="card_intro">
+          <img class="card_img" src="images/def.png">
+          <div>
+            <h3>Pranjal Chalise</h3>
+            <font size="2">App Development</font>
+          </div>
+        </div>
+        <br>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et
+          nisi vestibulum, tincidunt dui sit amet, elementum ligula. Phasellus
+          ac dictum ante. In ac nulla neque. Phasellus vel ligula nec risus
+        dictum pellentesque id in turpis.</span>
+      </div>
+
+      <div class="card">
+        <div class="card_intro">
+          <img class="card_img" src="images/def.png">
+          <div>
+            <h3>Shubham Jha</h3>
+            <font size="2">UI/UX</font>
+          </div>
+        </div>
+        <br>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et
+          nisi vestibulum, tincidunt dui sit amet, elementum ligula. Phasellus
+          ac dictum ante. In ac nulla neque. Phasellus vel ligula nec risus
+        dictum pellentesque id in turpis.</span>
+      </div>
+
+      <div class="card">
+        <div class="card_intro">
+          <img class="card_img" src="images/def.png">
+          <div>
+            <h3>Soyuj Jung Basnet</h3>
+            <font size="2">App Development & Machine Learning</font>
+          </div>
+        </div>
+        <br>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et
+          nisi vestibulum, tincidunt dui sit amet, elementum ligula. Phasellus
+          ac dictum ante. In ac nulla neque. Phasellus vel ligula nec risus
+        dictum pellentesque id in turpis.</span>
+      </div>
+
+    </div>
+    
+  </div>
+
+
+  <div id="slide_4">
+    <img src="images/uis.png" class="uis" />
+    <div class="d_content">
+      <h1>Download</h1>
+      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et
+        nisi vestibulum, tincidunt dui sit amet, elementum ligula. Phasellus
+        ac dictum ante. In ac nulla neque. Phasellus vel ligula nec risus
+      dictum pellentesque id in turpis.</span><br /><br />
+      <a href="#"><img src="images/gplay.png" /></a>
+      <a href="#"><img src="images/appstore.png" /></a>
+    </div>
+  </div>
+
+  <div id="slide_5" class="contactform">
+    <div class="margined">
+      <h1>Contact</h1>
+      <div class="typeform-widget" data-url="https://form.typeform.com/to/qjEtj6tM?typeform-medium=embed-snippet" data-transparency="100" data-hide-headers="true" data-hide-footer="true" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script></div>
+      <div class="footer">
+        <div>&copy; Incubate Nepal 2021</div>
+        <div>
+          <a href="privacy-policy"> Privacy Policy </a>
+          <a href="terms-and-conditions"> Terms & Conditions </a>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+  </html>
